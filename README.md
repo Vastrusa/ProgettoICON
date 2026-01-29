@@ -120,7 +120,7 @@ python predict.py
 ---
 
 ## 👩‍💻 Autore
-Valeria — Università degli Studi di Bari  
+Valeria Agostinacchio— Università degli Studi di Bari  
 Corso di Ingegneria della Conoscenza
 
 ---
