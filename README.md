@@ -78,8 +78,8 @@ ProntoSoccorsoIntelligente/
 ## ▶️ Come eseguire il progetto
 
 ### 1. Clona la repository
-git clone https://github.com/tuo-username/triage-intelligente.git
-cd triage-intelligente
+git clone https://github.com/tuo_username/ProgettoICON.git
+cd ProgettoICON
 
 ### 2. Installa le dipendenze
 pip install -r requirements.txt
