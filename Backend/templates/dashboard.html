@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Pazienti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .badge-triage { padding: 6px 12px; border-radius: 8px; font-weight: bold; }
+        .triage-rosso { background:#ffb3b3; color:#7a0000; }
+        .triage-giallo { background:#fff3b0; color:#7a6a00; }
+        .triage-verde { background:#b8e6b8; color:#0f5f0f; }
+        .triage-bianco { background:#ffffff; color:#000; border:1px solid #ddd; }
+    </style>
+</head>
+
+<body>
+<div class="container mt-4">
+
+    <h1 class="text-center mb-4">Dashboard Pazienti</h1>
+
+    <!-- Bottone Prossimo paziente (IN ALTO) -->
+    <div class="text-center mb-4">
+        <form action="{{ url_for('prossimo_paziente') }}" method="POST">
+            <button class="btn btn-success btn-lg">Prossimo paziente</button>
+        </form>
+    </div>
+
+    <!-- Prossimo paziente -->
+    {% if prossimo %}
+    <div class="alert alert-info text-center">
+        <h4>Prossimo paziente</h4>
+        <p><strong>{{ prossimo.nome }}</strong> ({{ prossimo.codice }})</p>
+    </div>
+    {% endif %}
+
+    <!-- Form aggiunta -->
+    <form action="{{ url_for('aggiungi_paziente') }}" method="POST" class="row g-3 mb-5">
+        <div class="col-md-3">
+            <input type="text" name="nome" class="form-control" placeholder="Nome paziente" required>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Sintomi</label>
+            <select name="sintomi[]" class="form-select" multiple>
+                <option value="DoloreToracico1">Dolore Toracico</option>
+                <option value="DifficoltaRespiratoria1">Difficoltà Respiratoria</option>
+                <option value="Febbre1">Febbre</option>
+                <option value="Raffreddore1">Raffreddore</option>
+                <option value="Trauma1">Trauma</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label">Saturazione</label>
+            <select name="saturazione" class="form-select">
+                <option value="">---</option>
+                <option value="Saturazione1">&lt;90</option>
+                <option value="Saturazione2">90-94</option>
+                <option value="Saturazione3">&gt;94</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label">Frequenza cardiaca</label>
+            <select name="fc" class="form-select">
+                <option value="">---</option>
+                <option value="FC60-100">60-100</option>
+                <option value="FC101-120">101-120</option>
+                <option value="FC121-140">121-140</option>
+                <option value="FCMaggiore140">&gt;140</option>
+                <option value="FC50-59">50-59</option>
+                <option value="FC40-49">40-49</option>
+                <option value="FCminore40">&lt;40</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <button class="btn btn-primary w-100">Aggiungi paziente</button>
+        </div>
+    </form>
+
+    <!-- Tabella -->
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Nome</th>
+                <th>Sintomi</th>
+                <th>Saturazione</th>
+                <th>Frequenza</th>
+                <th>Codice</th>
+                <th>Persone Prima</th>
+                <th>Azioni</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for p in coda %}
+            <tr>
+                <td>{{ p.nome }}</td>
+
+                <!-- Sintomi leggibili -->
+                <td>
+                    {% for s in p.sintomi %}
+                        {{ sintomi_label[s] }}<br>
+                    {% endfor %}
+                </td>
+
+                <!-- Saturazione leggibile -->
+                <td>
+                    {% if p.saturazione %}
+                        {{ saturazione_label[p.saturazione] }}
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+
+                <!-- Frequenza leggibile -->
+                <td>
+                    {% if p.frequenza %}
+                        {{ fc_label[p.frequenza] }}
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+
+                <td>
+                    {% if p.codice == "Rosso" %}
+                        <span class="badge-triage triage-rosso">Rosso</span>
+                    {% elif p.codice == "Giallo" %}
+                        <span class="badge-triage triage-giallo">Giallo</span>
+                    {% elif p.codice == "Verde" %}
+                        <span class="badge-triage triage-verde">Verde</span>
+                    {% else %}
+                        <span class="badge-triage triage-bianco">Bianco</span>
+                    {% endif %}
+                </td>
+
+                <td>{{ p.persone_prima }}</td>
+
+                <td>
+                    <form action="{{ url_for('elimina_paziente', nome=p.nome) }}" method="POST">
+                        <button class="btn btn-danger btn-sm">Elimina</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Grafico triage -->
+    <div class="mt-5">
+        <h3 class="text-center mb-3">Distribuzione Pazienti per Codice Triage</h3>
+        <canvas id="graficoTriage" height="120"></canvas>
+    </div>
+
+</div>
+
+<script>
+    const ctx = document.getElementById('graficoTriage').getContext('2d');
+
+    const grafico = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Rosso', 'Giallo', 'Verde', 'Bianco'],
+            datasets: [{
+                label: 'Numero pazienti',
+                data: [
+                    {{ conteggi.Rosso }},
+                    {{ conteggi.Giallo }},
+                    {{ conteggi.Verde }},
+                    {{ conteggi.Bianco }}
+                ],
+                backgroundColor: [
+                    '#ff4d4d',
+                    '#ffd633',
+                    '#33cc33',
+                    '#e6e6e6'
+                ],
+                borderColor: [
+                    '#b30000',
+                    '#b39b00',
+                    '#1f7a1f',
+                    '#000000'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

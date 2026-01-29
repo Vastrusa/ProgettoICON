@@ -1,0 +1,1811 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.prontosoccorso.it/ontology"
+         xmlns="http://www.prontosoccorso.it/ontology#"
+         xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+         xmlns:swrl2="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+
+<owl:Ontology rdf:about="#"/>
+
+<owl:ObjectProperty rdf:about="#assegnatoCodiceTriage">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="#CodiceTriage"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assegnatoCodiceTriage</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#haParametroVitale">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="#ParametroVitale"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haParametroVitale</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#presenzaSintomo">
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="#Sintomo"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presenzaSintomo</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#richiedeIntervento">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="#InterventoSanitario"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">richiedeIntervento</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#suggerisceEsame">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="#EsameDiagnostico"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suggerisceEsame</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#haPazientiDavanti">
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#haPriorita">
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#haTempoAttesa">
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#haTempoMassimoConsentito">
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#nomePaziente">
+  <rdfs:domain rdf:resource="#Paziente"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#valoreParametro">
+  <rdfs:domain rdf:resource="#ParametroVitale"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">valoreParametro</rdfs:label>
+</owl:DatatypeProperty>
+
+<owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+
+<owl:Class rdf:about="#Paziente">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paziente</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#CodiceTriage">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CodiceTriage</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#ParametroVitale">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ParametroVitale</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sintomo">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sintomo</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#InterventoSanitario">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InterventoSanitario</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#EsameDiagnostico">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EsameDiagnostico</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Bianco">
+  <rdfs:subClassOf rdf:resource="#CodiceTriage"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bianco</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#DifficoltaRespiratoria1">
+  <rdfs:subClassOf rdf:resource="#Sintomo"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#DifficoltaRespiratoria1"/>
+</owl:Class>
+
+<owl:Class rdf:about="#DoloreToracico">
+  <rdfs:subClassOf rdf:resource="#Sintomo"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Febbre">
+  <rdfs:subClassOf rdf:resource="#Sintomo"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Febbre</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#FrequenzaCardiaca">
+  <rdfs:subClassOf rdf:resource="#ParametroVitale"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FrequenzaCardiaca</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Giallo">
+  <rdfs:subClassOf rdf:resource="#CodiceTriage"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giallo</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Raffreddore">
+  <rdfs:subClassOf rdf:resource="#Sintomo"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rosso">
+  <rdfs:subClassOf rdf:resource="#CodiceTriage"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosso</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Saturazione">
+  <rdfs:subClassOf rdf:resource="#ParametroVitale"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saturazione</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Trauma">
+  <rdfs:subClassOf rdf:resource="#Sintomo"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trauma</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Verde">
+  <rdfs:subClassOf rdf:resource="#CodiceTriage"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verde</rdfs:label>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#DoloreToracico1">
+  <rdf:type rdf:resource="#DoloreToracico"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FC101-120">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">105.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FC121-140">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">130.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FC40-49">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FC50-59">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FC60-100">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FCmaggiore140">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FCminore40">
+  <rdf:type rdf:resource="#FrequenzaCardiaca"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Febbre1">
+  <rdf:type rdf:resource="#Febbre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Raffreddore1">
+  <rdf:type rdf:resource="#Raffreddore"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Saturazione1">
+  <rdf:type rdf:resource="#Saturazione"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">88.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Saturazione2">
+  <rdf:type rdf:resource="#Saturazione"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">92.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Saturazione3">
+  <rdf:type rdf:resource="#Saturazione"/>
+  <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">98.0</valoreParametro>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sutura">
+  <rdf:type rdf:resource="#InterventoSanitario"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TAC">
+  <rdf:type rdf:resource="#EsameDiagnostico"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Trauma1">
+  <rdf:type rdf:resource="#Trauma"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#triageBianco">
+  <rdf:type rdf:resource="#Bianco"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#triageGiallo">
+  <rdf:type rdf:resource="#Giallo"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#triageRosso">
+  <rdf:type rdf:resource="#Rosso"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#triageVerde">
+  <rdf:type rdf:resource="#Verde"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paz_266acf9628c545398b13483c41842b2c">
+  <rdf:type rdf:resource="#Paziente"/>
+  <presenzaSintomo rdf:resource="#DifficoltaRespiratoria1"/>
+  <assegnatoCodiceTriage rdf:resource="#triageRosso"/>
+  <suggerisceEsame rdf:resource="#TAC"/>
+  <nomePaziente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valeria Agostinacchio</nomePaziente>
+  <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haPriorita>
+  <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</haTempoAttesa>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paz_b8426517b0034b87b909114c7c0091a7">
+  <rdf:type rdf:resource="#Paziente"/>
+  <presenzaSintomo rdf:resource="#Febbre1"/>
+  <assegnatoCodiceTriage rdf:resource="#triageGiallo"/>
+  <nomePaziente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gianluca Altini</nomePaziente>
+  <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</haPriorita>
+  <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haTempoAttesa>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paz_33f93ba5e8444dd181818ce1634a2725">
+  <rdf:type rdf:resource="#Paziente"/>
+  <presenzaSintomo rdf:resource="#DoloreToracico1"/>
+  <assegnatoCodiceTriage rdf:resource="#triageRosso"/>
+  <suggerisceEsame rdf:resource="#TAC"/>
+  <nomePaziente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mario Rossi</nomePaziente>
+  <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haPriorita>
+  <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</haTempoAttesa>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paz_4d3ef6ff15344411a8bae4f0c5929034">
+  <rdf:type rdf:resource="#Paziente"/>
+  <presenzaSintomo rdf:resource="#Raffreddore1"/>
+  <haParametroVitale rdf:resource="#Saturazione3"/>
+  <assegnatoCodiceTriage rdf:resource="#triageVerde"/>
+  <nomePaziente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">giuseppe</nomePaziente>
+  <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</haPriorita>
+  <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</haTempoAttesa>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paz_cf46854f2cde4682b314296c18950812">
+  <rdf:type rdf:resource="#Paziente"/>
+  <presenzaSintomo rdf:resource="#Raffreddore1"/>
+  <haParametroVitale rdf:resource="#Saturazione3"/>
+  <assegnatoCodiceTriage rdf:resource="#triageVerde"/>
+  <nomePaziente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">valeriaagostinacchio</nomePaziente>
+  <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</haPriorita>
+  <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</haTempoAttesa>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paz_cf55fb904871472387c5f09eda909aff">
+  <rdf:type rdf:resource="#Paziente"/>
+  <presenzaSintomo rdf:resource="#Raffreddore1"/>
+  <assegnatoCodiceTriage rdf:resource="#triageBianco"/>
+  <nomePaziente rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gianluca Altini</nomePaziente>
+  <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</haPriorita>
+  <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</haTempoAttesa>
+</owl:NamedIndividual>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+  <rdfs:domain rdf:resource="#ParametroVitale"/>
+</rdf:Description>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#n"/>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#t"/>
+
+<swrl:Variable rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#max"/>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageRosso"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageRossoFCmaggiore140</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageRosso"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageRossoFCminore40</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Saturazione"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageVerde"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageVerdeSaturazione&gt;94</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Saturazione"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageGiallo"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageGialloSaturazione90-94</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageVerde"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageVerdeFC101-120</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Saturazione"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Paziente"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                          <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageRosso"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageRossoSaturazione&lt;90</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:BuiltinAtom>
+          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+          <swrl:arguments>
+            <rdf:List>
+              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+              <rdf:rest>
+                <rdf:List>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</rdf:first>
+                </rdf:List>
+              </rdf:rest>
+            </rdf:List>
+          </swrl:arguments>
+        </swrl:BuiltinAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Saturazione"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:ClassAtom>
+                  <swrl:classPredicate rdf:resource="#Paziente"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                </swrl:ClassAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                          <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#suggerisceEsame"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#TAC"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SuggerimentoTACperSaturazione&lt;95</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#presenzaSintomo"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+              <swrl:argument2 rdf:resource="#DifficoltaRespiratoria1"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageRosso"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageRossoDifficoltaRespiratoria</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#presenzaSintomo"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#DoloreToracico1"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Paziente"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageRosso"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageRossoDoloreToracico</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#presenzaSintomo"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#Febbre1"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Paziente"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageGiallo"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageGialloFebbre</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+              <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#haPazientiDavanti"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#n"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#n"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</swrl:argument2>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verde-GialloPazienti</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+              <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#haTempoAttesa"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#t"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#haTempoMassimoConsentito"/>
+                          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                          <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#max"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                              <swrl:arguments>
+                                <rdf:Description>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#t"/>
+                                  <rdf:rest>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#max"/>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                  </rdf:rest>
+                                </rdf:Description>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giallo-RossoTempoMax</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+              <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#haTempoAttesa"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#t"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#haTempoMassimoConsentito"/>
+                          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                          <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#max"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                              <swrl:arguments>
+                                <rdf:Description>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#t"/>
+                                  <rdf:rest>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#max"/>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                  </rdf:rest>
+                                </rdf:Description>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</swrl:argument2>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verde-GialloTempoMax</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+              <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#haPriorita"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</swrl:argument2>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BiancoUltimo</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageGiallo"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageGialloFC121-140</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageGiallo"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageGialloFC40-49</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageVerde"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageVerdeFC50-59</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Paziente"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#FrequenzaCardiaca"/>
+              <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#haParametroVitale"/>
+                  <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                  <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#valoreParametro"/>
+                      <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                      <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#assegnatoCodiceTriage"/>
+          <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+          <swrl:argument2 rdf:resource="#triageBianco"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TriageBiancoFC60-100</rdfs:label>
+</swrl:Imp>
+
+
+</rdf:RDF>

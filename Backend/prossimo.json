@@ -1,0 +1,12 @@
+{
+    "nome": "Gianluca Altini",
+    "sintomi": [
+        "DoloreToracico1"
+    ],
+    "saturazione": "Saturazione1",
+    "frequenza": "FC60-100",
+    "codice": "Rosso",
+    "priorita": 1,
+    "ordine_arrivo": 0,
+    "persone_prima": 0
+}

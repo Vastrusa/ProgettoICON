@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Mario Rossi",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC101-120",
+        "codice": "Rosso",
+        "priorita": 1,
+        "ordine_arrivo": 1,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Valeria",
+        "sintomi": [
+            "Trauma1"
+        ],
+        "saturazione": "",
+        "frequenza": "",
+        "codice": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 2,
+        "persone_prima": 1
+    }
+]
