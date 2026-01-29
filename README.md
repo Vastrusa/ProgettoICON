@@ -1,7 +1,12 @@
 # ProgettoICON  
 # 🏥 Sistema di Triage Intelligente  
-Progetto di Ingegneria della Conoscenza e Machine Learning  
+Progetto di Ingegneria della Conoscenza 
 Università degli Studi di Bari – Dipartimento di Informatica
+
+---
+## 👩‍💻 Autore
+Valeria Agostinacchio— Università degli Studi di Bari  
+Corso di Ingegneria della Conoscenza
 
 ---
 
@@ -116,12 +121,6 @@ python predict.py
 - Prolog (pyswip)  
 - OWL / Protégé  
 - HTML / Bootstrap / Chart.js  
-
----
-
-## 👩‍💻 Autore
-Valeria Agostinacchio— Università degli Studi di Bari  
-Corso di Ingegneria della Conoscenza
 
 ---
 
