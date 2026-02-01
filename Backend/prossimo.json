@@ -1,0 +1,19 @@
+{
+    "nome": "Paziente50",
+    "sintomi": [
+        "Raffreddore1"
+    ],
+    "saturazione": "Saturazione3",
+    "frequenza": "FC60-100",
+    "codice": "Verde",
+    "codice_ml": "Rosso",
+    "codice_log": "Rosso",
+    "codice_rf": "Rosso",
+    "codice_prolog": "Verde",
+    "codice_astar": "Verde",
+    "codice_naive": "Verde",
+    "codice_bayes": "Bianco",
+    "priorita": 3,
+    "ordine_arrivo": 49,
+    "persone_prima": 0
+}

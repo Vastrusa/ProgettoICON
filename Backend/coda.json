@@ -1,0 +1,952 @@
+[
+    {
+        "nome": "Paziente1",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FCMaggiore140",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 0,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente2",
+        "sintomi": [
+            "DoloreToracico1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FC121-140",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 1,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente3",
+        "sintomi": [
+            "DoloreToracico1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FCMaggiore140",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 2,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente4",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FCminore40",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 3,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente5",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FC40-49",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 4,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente6",
+        "sintomi": [
+            "DoloreToracico1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FC50-59",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Verde",
+        "priorita": 1,
+        "ordine_arrivo": 5,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente7",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FCMaggiore140",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 6,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente8",
+        "sintomi": [
+            "DoloreToracico1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FCminore40",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Verde",
+        "priorita": 1,
+        "ordine_arrivo": 7,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente9",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FC101-120",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 8,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente10",
+        "sintomi": [
+            "DoloreToracico1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FCMaggiore140",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 9,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente11",
+        "sintomi": [
+            "DifficoltaRespiratoria1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FC121-140",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Giallo",
+        "priorita": 1,
+        "ordine_arrivo": 10,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente12",
+        "sintomi": [
+            "DoloreToracico1"
+        ],
+        "saturazione": "Saturazione1",
+        "frequenza": "FCminore40",
+        "codice": "Rosso",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Rosso",
+        "codice_astar": "Rosso",
+        "codice_naive": "Rosso",
+        "codice_bayes": "Verde",
+        "priorita": 1,
+        "ordine_arrivo": 11,
+        "persone_prima": 0
+    },
+    {
+        "nome": "Paziente13",
+        "sintomi": [
+            "Trauma1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Giallo",
+        "codice_bayes": "Rosso",
+        "priorita": 2,
+        "ordine_arrivo": 12,
+        "persone_prima": 12
+    },
+    {
+        "nome": "Paziente14",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC60-100",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 13,
+        "persone_prima": 13
+    },
+    {
+        "nome": "Paziente15",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC121-140",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 14,
+        "persone_prima": 14
+    },
+    {
+        "nome": "Paziente16",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC40-49",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 2,
+        "ordine_arrivo": 15,
+        "persone_prima": 15
+    },
+    {
+        "nome": "Paziente17",
+        "sintomi": [
+            "Trauma1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC121-140",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Giallo",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 16,
+        "persone_prima": 16
+    },
+    {
+        "nome": "Paziente18",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC60-100",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 17,
+        "persone_prima": 17
+    },
+    {
+        "nome": "Paziente19",
+        "sintomi": [
+            "Trauma1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC101-120",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Giallo",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 18,
+        "persone_prima": 18
+    },
+    {
+        "nome": "Paziente20",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC121-140",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 19,
+        "persone_prima": 19
+    },
+    {
+        "nome": "Paziente21",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC40-49",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 20,
+        "persone_prima": 20
+    },
+    {
+        "nome": "Paziente22",
+        "sintomi": [
+            "Trauma1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC40-49",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Giallo",
+        "codice_bayes": "Rosso",
+        "priorita": 2,
+        "ordine_arrivo": 21,
+        "persone_prima": 21
+    },
+    {
+        "nome": "Paziente23",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC121-140",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 22,
+        "persone_prima": 22
+    },
+    {
+        "nome": "Paziente24",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione2",
+        "frequenza": "FC40-49",
+        "codice": "Giallo",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Giallo",
+        "codice_astar": "Giallo",
+        "codice_naive": "Verde",
+        "codice_bayes": "Giallo",
+        "priorita": 2,
+        "ordine_arrivo": 23,
+        "persone_prima": 23
+    },
+    {
+        "nome": "Paziente25",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Verde",
+        "codice_log": "Verde",
+        "codice_rf": "Verde",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 24,
+        "persone_prima": 24
+    },
+    {
+        "nome": "Paziente26",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC101-120",
+        "codice": "Verde",
+        "codice_ml": "Giallo",
+        "codice_log": "Verde",
+        "codice_rf": "Giallo",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 25,
+        "persone_prima": 25
+    },
+    {
+        "nome": "Paziente27",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC50-59",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 26,
+        "persone_prima": 26
+    },
+    {
+        "nome": "Paziente28",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC50-59",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 27,
+        "persone_prima": 27
+    },
+    {
+        "nome": "Paziente29",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC101-120",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 28,
+        "persone_prima": 28
+    },
+    {
+        "nome": "Paziente30",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC101-120",
+        "codice": "Verde",
+        "codice_ml": "Giallo",
+        "codice_log": "Verde",
+        "codice_rf": "Giallo",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 29,
+        "persone_prima": 29
+    },
+    {
+        "nome": "Paziente31",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC50-59",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 30,
+        "persone_prima": 30
+    },
+    {
+        "nome": "Paziente32",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC101-120",
+        "codice": "Verde",
+        "codice_ml": "Giallo",
+        "codice_log": "Verde",
+        "codice_rf": "Giallo",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 31,
+        "persone_prima": 31
+    },
+    {
+        "nome": "Paziente33",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC50-59",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 32,
+        "persone_prima": 32
+    },
+    {
+        "nome": "Paziente34",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC101-120",
+        "codice": "Verde",
+        "codice_ml": "Giallo",
+        "codice_log": "Verde",
+        "codice_rf": "Giallo",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 33,
+        "persone_prima": 33
+    },
+    {
+        "nome": "Paziente35",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC50-59",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 34,
+        "persone_prima": 34
+    },
+    {
+        "nome": "Paziente36",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC101-120",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Giallo",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 35,
+        "persone_prima": 35
+    },
+    {
+        "nome": "Paziente37",
+        "sintomi": [
+            "Febbre1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC50-59",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Verde",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Rosso",
+        "priorita": 3,
+        "ordine_arrivo": 36,
+        "persone_prima": 36
+    },
+    {
+        "nome": "Paziente38",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 37,
+        "persone_prima": 37
+    },
+    {
+        "nome": "Paziente39",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 38,
+        "persone_prima": 38
+    },
+    {
+        "nome": "Paziente40",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 39,
+        "persone_prima": 39
+    },
+    {
+        "nome": "Paziente41",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 40,
+        "persone_prima": 40
+    },
+    {
+        "nome": "Paziente42",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 41,
+        "persone_prima": 41
+    },
+    {
+        "nome": "Paziente43",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 42,
+        "persone_prima": 42
+    },
+    {
+        "nome": "Paziente44",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 43,
+        "persone_prima": 43
+    },
+    {
+        "nome": "Paziente45",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 44,
+        "persone_prima": 44
+    },
+    {
+        "nome": "Paziente46",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 45,
+        "persone_prima": 45
+    },
+    {
+        "nome": "Paziente47",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 46,
+        "persone_prima": 46
+    },
+    {
+        "nome": "Paziente48",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 47,
+        "persone_prima": 47
+    },
+    {
+        "nome": "Paziente49",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 48,
+        "persone_prima": 48
+    },
+    {
+        "nome": "Paziente50",
+        "sintomi": [
+            "Raffreddore1"
+        ],
+        "saturazione": "Saturazione3",
+        "frequenza": "FC60-100",
+        "codice": "Verde",
+        "codice_ml": "Rosso",
+        "codice_log": "Rosso",
+        "codice_rf": "Rosso",
+        "codice_prolog": "Verde",
+        "codice_astar": "Verde",
+        "codice_naive": "Verde",
+        "codice_bayes": "Bianco",
+        "priorita": 3,
+        "ordine_arrivo": 49,
+        "persone_prima": 49
+    }
+]

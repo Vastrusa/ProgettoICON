@@ -1,0 +1,442 @@
+valeriaagostinacchio | OWL: Giallo | ML: Giallo | Prolog: Verde
+Gianluca Altini | OWL: Verde | ML: Bianco | Prolog: Bianco
+Valeria | OWL: Verde | ML: Verde | Prolog: Bianco
+Luigi Bianchi | OWL: Verde | ML: Verde | Prolog: Bianco
+Gianluca Altini | OWL: Verde | ML: Bianco | Prolog: Bianco
+Mario Rossi | OWL: Verde | ML: Verde | Prolog: Bianco
+Mario Rossi | OWL: Rosso | ML: Rosso | Prolog: Giallo
+Mario Rossi | OWL: Rosso | ML: Rosso | Prolog: Giallo
+apollonia | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso
+pippo | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Bianco | A*: Bianco
+Gianluca Altini | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Bianco
+Gianluca Altini | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Giallo
+Valeria Agostinacchio | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+Luigi Bianchi | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+Onofrio Capelluti | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+Antonio Bruni | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Bianco
+Apollonia conti | OWL: Bianco | ML: Verde (Log:Verde, RF:Verde) | Prolog: Bianco | A*: Bianco | Naive: Bianco
+Apollonia conti | OWL: Giallo | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+Carlo Conti | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P1 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P2 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P3 | OWL: Bianco | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P4 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P5 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P6 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P7 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P8 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P9 | OWL: Bianco | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P10 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde
+P11 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Bianco | A*: Bianco | Naive: Bianco
+P12 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Verde | A*: Bianco | Naive: Bianco
+P13 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Bianco | A*: Bianco | Naive: Bianco
+P14 | OWL: Bianco | ML: Giallo (Log:Bianco, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P15 | OWL: Verde | ML: Giallo (Log:Bianco, RF:Giallo) | Prolog: Bianco | A*: Bianco | Naive: Bianco
+P16 | OWL: Verde | ML: Giallo (Log:Bianco, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P17 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Verde | A*: Bianco | Naive: Bianco
+P18 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P19 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Bianco | A*: Bianco | Naive: Bianco
+P20 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Verde | A*: Bianco | Naive: Bianco
+P21 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P22 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P23 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Giallo | Naive: Bianco
+P24 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P25 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P26 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P27 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Rosso
+P28 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P29 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Rosso
+P30 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P31 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Bianco
+P32 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Giallo
+P35 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Giallo
+P36 | OWL: Rosso | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Rosso | Naive: Bianco
+P38 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Giallo
+P40 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Bianco
+P43 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Rosso
+P45 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Rosso
+P48 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Rosso | Naive: Rosso
+P2 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Rosso
+P3 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P5 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P6 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Rosso
+P9 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P10 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Rosso
+P11 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Bianco | A*: Bianco | Naive: Verde
+P12 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Verde | A*: Bianco | Naive: Verde
+P13 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Bianco | A*: Bianco | Naive: Rosso
+P14 | OWL: Bianco | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P15 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Bianco | A*: Bianco | Naive: Verde
+P16 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P17 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Verde | A*: Bianco | Naive: Verde
+P18 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Giallo | Naive: Rosso
+P19 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Bianco | A*: Bianco | Naive: Verde
+P20 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Verde | A*: Bianco | Naive: Verde
+P21 | OWL: Verde | ML: Giallo (Log:Bianco, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P22 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P23 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Verde | A*: Giallo | Naive: Giallo
+P24 | OWL: Giallo | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P25 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P26 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P27 | OWL: Bianco | ML: Giallo (Log:Bianco, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P28 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P29 | OWL: Verde | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Giallo | A*: Giallo | Naive: Bianco
+P30 | OWL: Verde | ML: Giallo (Log:Giallo, RF:Giallo) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P31 | OWL: Rosso | ML: Verde (Log:Bianco, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Bianco
+P32 | OWL: Rosso | ML: Verde (Log:Bianco, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Rosso
+P33 | OWL: Rosso | ML: Rosso (Log:Bianco, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Bianco
+P34 | OWL: Rosso | ML: Rosso (Log:Bianco, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Bianco
+P35 | OWL: Rosso | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Giallo | A*: Rosso | Naive: Bianco
+P36 | OWL: Rosso | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Verde | A*: Rosso | Naive: Bianco
+P37 | OWL: Rosso | ML: Bianco (Log:Bianco, RF:Bianco) | Prolog: Rosso | A*: Rosso | Naive: Bianco
+P38 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Bianco
+P39 | OWL: Rosso | ML: Rosso (Log:Bianco, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Bianco
+P40 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Rosso
+P41 | OWL: Rosso | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P42 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P43 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Verde
+P44 | OWL: Rosso | ML: Verde (Log:Verde, RF:Bianco) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P45 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Rosso
+P46 | OWL: Rosso | ML: Verde (Log:Verde, RF:Bianco) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P47 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P48 | OWL: Rosso | ML: Verde (Log:Verde, RF:Verde) | Prolog: Giallo | A*: Rosso | Naive: Verde
+P49 | OWL: Rosso | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P50 | OWL: Rosso | ML: Verde (Log:Verde, RF:Bianco) | Prolog: Rosso | A*: Rosso | Naive: Verde
+P1 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+P2 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+P3 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P4 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+P5 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P6 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P7 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Verde | Naive: Verde
+P8 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+P9 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P10 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+P11 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Bianco | Naive: Verde
+P12 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Bianco | Naive: Verde
+P13 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Bianco | Naive: Verde
+P14 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P15 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Bianco | Naive: Verde
+P16 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P17 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Bianco | Naive: Verde
+P18 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+P19 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Bianco | Naive: Verde
+P20 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Bianco | Naive: Verde
+P21 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P22 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P23 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P24 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P25 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P26 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P27 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P28 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P29 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+P30 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Luigi Bianchi | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Mario Rossi | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Giallo1 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Giallo2 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo3 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo4 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo5 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Giallo6 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo7 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Marco Verdi | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Giallo8 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo9 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo10 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Giallo11 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Giallo12 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Verde1 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde2 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde3 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde4 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde5 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde6 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde7 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde8 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde9 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde10 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde11 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde12 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Verde13 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco1 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco2 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco3 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco4 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco5 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco6 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco7 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco8 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco9 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco10 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco11 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco12 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Bianco13 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente13 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Paziente14 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente15 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente16 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente17 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Paziente18 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente19 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Paziente20 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente21 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente22 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo
+Paziente23 | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente24 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde
+Paziente25 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente26 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente27 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente28 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente29 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente30 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente31 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente32 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente33 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente34 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente35 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente36 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente37 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente38 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente39 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente40 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente41 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente42 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente43 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente44 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente45 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente46 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente47 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente48 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente49 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente50 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde
+Paziente1 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente2 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente3 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente4 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente5 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente6 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente7 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente8 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente9 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente10 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente11 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente12 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente13 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente14 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente15 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente16 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Bianco
+Paziente17 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente18 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente19 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente20 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente21 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente22 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente23 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente24 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente25 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente26 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente27 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente28 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente29 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente30 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente31 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente32 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente33 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente34 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente35 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente36 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente37 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente38 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente39 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente40 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente41 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente42 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente43 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente44 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente45 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente46 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente47 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente48 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente49 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente50 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Gianluca Altini | OWL: Verde | ML: Rosso (Log:Rosso, RF:Verde) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Luigi Bianchi | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Mario Rossi | OWL: Bianco | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente1 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente2 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente3 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente4 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente5 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente6 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente7 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente8 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente9 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente10 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente11 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente12 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente13 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente14 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente15 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente16 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Bianco
+Paziente17 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente18 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente19 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente20 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente21 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente22 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente23 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente24 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente25 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente26 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente27 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente28 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente29 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente30 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente31 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente32 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente33 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente34 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente35 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente36 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente37 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente38 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente39 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente40 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente41 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente42 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente43 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente44 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente45 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente46 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente47 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente48 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente49 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente50 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente1 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente2 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente3 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente4 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente5 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente6 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente7 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente8 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente9 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente10 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente11 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente12 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente13 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente14 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente15 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente16 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Bianco
+Paziente17 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente18 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente19 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente20 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente21 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente22 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente23 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente24 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente25 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente26 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente27 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente28 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente29 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente30 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente31 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente32 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente33 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente34 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente35 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente36 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente37 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente38 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente39 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente40 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente41 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente42 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente43 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente44 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente45 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente46 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente47 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente48 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente49 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente50 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente1 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente2 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente3 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente4 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente5 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente6 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente7 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente8 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente9 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente10 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente11 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente12 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente13 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente14 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente15 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente16 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Bianco
+Paziente17 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente1 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente18 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente2 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente19 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente3 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente20 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente4 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente5 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente21 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente1 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente2 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente3 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente4 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente5 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente6 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente7 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente8 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente9 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente10 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente11 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Giallo
+Paziente12 | OWL: Rosso | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Rosso | A*: Rosso | Naive: Rosso | Bayes: Verde
+Paziente13 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente14 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente15 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente16 | OWL: Giallo | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Bianco
+Paziente17 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente18 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente19 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Giallo
+Paziente20 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente21 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente22 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Giallo | Bayes: Rosso
+Paziente23 | OWL: Giallo | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente24 | OWL: Giallo | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Giallo | A*: Giallo | Naive: Verde | Bayes: Giallo
+Paziente25 | OWL: Verde | ML: Verde (Log:Verde, RF:Verde) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente26 | OWL: Verde | ML: Giallo (Log:Verde, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente27 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente28 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente29 | OWL: Verde | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente30 | OWL: Verde | ML: Giallo (Log:Verde, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente31 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente32 | OWL: Verde | ML: Giallo (Log:Verde, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente33 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente34 | OWL: Verde | ML: Giallo (Log:Verde, RF:Giallo) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente35 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente36 | OWL: Verde | ML: Rosso (Log:Giallo, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente37 | OWL: Verde | ML: Rosso (Log:Verde, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Rosso
+Paziente38 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente39 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente40 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente41 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente42 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente43 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente44 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente45 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente46 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente47 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente48 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente49 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco
+Paziente50 | OWL: Verde | ML: Rosso (Log:Rosso, RF:Rosso) | Prolog: Verde | A*: Verde | Naive: Verde | Bayes: Bianco

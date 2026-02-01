@@ -1,0 +1,2082 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.prontosoccorso.it/ontology#"
+     xml:base="http://www.prontosoccorso.it/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrl2="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.prontosoccorso.it/ontology#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage -->
+
+    <owl:ObjectProperty rdf:about="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.prontosoccorso.it/ontology#CodiceTriage"/>
+        <rdfs:label>assegnatoCodiceTriage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#haParametroVitale -->
+
+    <owl:ObjectProperty rdf:about="http://www.prontosoccorso.it/ontology#haParametroVitale">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.prontosoccorso.it/ontology#ParametroVitale"/>
+        <rdfs:label>haParametroVitale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#presenzaSintomo -->
+
+    <owl:ObjectProperty rdf:about="http://www.prontosoccorso.it/ontology#presenzaSintomo">
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.prontosoccorso.it/ontology#Sintomo"/>
+        <rdfs:label>presenzaSintomo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#richiedeIntervento -->
+
+    <owl:ObjectProperty rdf:about="http://www.prontosoccorso.it/ontology#richiedeIntervento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:label>richiedeIntervento</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#suggerisceEsame -->
+
+    <owl:ObjectProperty rdf:about="http://www.prontosoccorso.it/ontology#suggerisceEsame">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:label>suggerisceEsame</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#haPazientiDavanti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.prontosoccorso.it/ontology#haPazientiDavanti">
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#haPriorita -->
+
+    <owl:DatatypeProperty rdf:about="http://www.prontosoccorso.it/ontology#haPriorita">
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#haTempoAttesa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.prontosoccorso.it/ontology#haTempoAttesa">
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#nomePaziente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.prontosoccorso.it/ontology#nomePaziente">
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#valoreParametro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.prontosoccorso.it/ontology#valoreParametro">
+        <rdfs:domain rdf:resource="http://www.prontosoccorso.it/ontology#ParametroVitale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Bianco -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Bianco">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#CodiceTriage"/>
+        <rdfs:label>Bianco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#CodiceTriage -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#CodiceTriage">
+        <rdfs:label>CodiceTriage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#Sintomo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#DoloreToracico -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#DoloreToracico">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#Sintomo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Febbre -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Febbre">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#Sintomo"/>
+        <rdfs:label>Febbre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FrequenzaCardiaca -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#ParametroVitale"/>
+        <rdfs:label>FrequenzaCardiaca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Giallo -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Giallo">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#CodiceTriage"/>
+        <rdfs:label>Giallo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#ParametroVitale -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#ParametroVitale">
+        <rdfs:label>ParametroVitale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paziente -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Paziente">
+        <rdfs:label>Paziente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Raffreddore -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Raffreddore">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#Sintomo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Rosso -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Rosso">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#CodiceTriage"/>
+        <rdfs:label>Rosso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Saturazione -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Saturazione">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#ParametroVitale"/>
+        <rdfs:label>Saturazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Sintomo -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Sintomo">
+        <rdfs:label>Sintomo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Trauma -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Trauma">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#Sintomo"/>
+        <rdfs:label>Trauma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Verde -->
+
+    <owl:Class rdf:about="http://www.prontosoccorso.it/ontology#Verde">
+        <rdfs:subClassOf rdf:resource="http://www.prontosoccorso.it/ontology#CodiceTriage"/>
+        <rdfs:label>Verde</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria1">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#DoloreToracico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#DoloreToracico1">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#DoloreToracico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FC101-120 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FC101-120">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">105.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FC121-140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FC121-140">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">130.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FC40-49 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FC40-49">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FC50-59 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FC50-59">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FC60-100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FC60-100">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FCmaggiore140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FCmaggiore140">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#FCminore40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#FCminore40">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Febbre1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Febbre1">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Febbre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paz_266acf9628c545398b13483c41842b2c -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Paz_266acf9628c545398b13483c41842b2c">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <assegnatoCodiceTriage rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+        <presenzaSintomo rdf:resource="http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria1"/>
+        <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haPriorita>
+        <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</haTempoAttesa>
+        <nomePaziente>Valeria Agostinacchio</nomePaziente>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paz_33f93ba5e8444dd181818ce1634a2725 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Paz_33f93ba5e8444dd181818ce1634a2725">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <assegnatoCodiceTriage rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+        <presenzaSintomo rdf:resource="http://www.prontosoccorso.it/ontology#DoloreToracico1"/>
+        <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haPriorita>
+        <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</haTempoAttesa>
+        <nomePaziente>Mario Rossi</nomePaziente>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paz_4d3ef6ff15344411a8bae4f0c5929034 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Paz_4d3ef6ff15344411a8bae4f0c5929034">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <assegnatoCodiceTriage rdf:resource="http://www.prontosoccorso.it/ontology#triageVerde"/>
+        <haParametroVitale rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione3"/>
+        <presenzaSintomo rdf:resource="http://www.prontosoccorso.it/ontology#Raffreddore1"/>
+        <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</haPriorita>
+        <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</haTempoAttesa>
+        <nomePaziente>giuseppe</nomePaziente>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paz_b8426517b0034b87b909114c7c0091a7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Paz_b8426517b0034b87b909114c7c0091a7">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <assegnatoCodiceTriage rdf:resource="http://www.prontosoccorso.it/ontology#triageGiallo"/>
+        <presenzaSintomo rdf:resource="http://www.prontosoccorso.it/ontology#Febbre1"/>
+        <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</haPriorita>
+        <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haTempoAttesa>
+        <nomePaziente>Gianluca Altini</nomePaziente>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paz_cf46854f2cde4682b314296c18950812 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Paz_cf46854f2cde4682b314296c18950812">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <assegnatoCodiceTriage rdf:resource="http://www.prontosoccorso.it/ontology#triageVerde"/>
+        <haParametroVitale rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione3"/>
+        <presenzaSintomo rdf:resource="http://www.prontosoccorso.it/ontology#Raffreddore1"/>
+        <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</haPriorita>
+        <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</haTempoAttesa>
+        <nomePaziente>valeriaagostinacchio</nomePaziente>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Paz_cf55fb904871472387c5f09eda909aff -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Paz_cf55fb904871472387c5f09eda909aff">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+        <assegnatoCodiceTriage rdf:resource="http://www.prontosoccorso.it/ontology#triageBianco"/>
+        <presenzaSintomo rdf:resource="http://www.prontosoccorso.it/ontology#Raffreddore1"/>
+        <haPriorita rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</haPriorita>
+        <haTempoAttesa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</haTempoAttesa>
+        <nomePaziente>Gianluca Altini</nomePaziente>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Raffreddore1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Raffreddore1">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Raffreddore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Saturazione1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Saturazione1">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">88.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Saturazione2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Saturazione2">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">92.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Saturazione3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Saturazione3">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione"/>
+        <valoreParametro rdf:datatype="http://www.w3.org/2001/XMLSchema#float">98.0</valoreParametro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#Trauma1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#Trauma1">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Trauma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#triageBianco -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#triageBianco">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Bianco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#triageGiallo -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#triageGiallo">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Giallo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#triageRosso -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#triageRosso">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Rosso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.prontosoccorso.it/ontology#triageVerde -->
+
+    <owl:NamedIndividual rdf:about="http://www.prontosoccorso.it/ontology#triageVerde">
+        <rdf:type rdf:resource="http://www.prontosoccorso.it/ontology#Verde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.prontosoccorso.it/ontology#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.prontosoccorso.it/ontology#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.prontosoccorso.it/ontology#val">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageVerdeFC50-59</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#v"/>
+                                                <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.prontosoccorso.it/ontology#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.prontosoccorso.it/ontology#val"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageVerde"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageRossoFCminore40</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageVerdeFebbre</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#presenzaSintomo"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#Febbre1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                                <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageVerde"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageBiancoRaffreddore</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#presenzaSintomo"/>
+                                <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                                <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#Raffreddore1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageBianco"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageGialloTrauma</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#presenzaSintomo"/>
+                                <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                                <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#Trauma1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="http://www.prontosoccorso.it/ontology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageGiallo"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageVerdeSaturazione&gt;94</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageVerde"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageGialloSaturazione90-94</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageGiallo"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageRossoSaturazione&lt;90</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Saturazione"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageRossoDifficoltaRespiratoria</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#presenzaSintomo"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#DifficoltaRespiratoria1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageRossoFCmaggiore140</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageRossoDoloreToracico</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#presenzaSintomo"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#DoloreToracico1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageRosso"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Verde-GialloPazienti</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haPriorita"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haPazientiDavanti"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#n"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#n"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haPriorita"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>BiancoUltimo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haPriorita"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#prio"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haPriorita"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageVerdeFC101-120</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageVerde"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageGialloFC121-140</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageGiallo"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageGialloFC40-49</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageGiallo"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>TriageBiancoFC60-100</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#Paziente"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.prontosoccorso.it/ontology#FrequenzaCardiaca"/>
+                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#haParametroVitale"/>
+                                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                                        <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#valoreParametro"/>
+                                                <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#v"/>
+                                                <swrl:argument2 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#val"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.prontosoccorso.it/ontology#assegnatoCodiceTriage"/>
+                        <swrl:argument1 rdf:resource="urn:webprotege:ontology:7e8ac952-b2a0-49c4-94e2-6eabfc874809#p"/>
+                        <swrl:argument2 rdf:resource="http://www.prontosoccorso.it/ontology#triageBianco"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

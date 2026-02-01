@@ -1,0 +1,76 @@
+<Pazienti>
+
+    <!-- ===================== -->
+    <!--        ROSSI (12)     -->
+    <!-- ===================== -->
+
+    <Paziente><Nome>Paziente1</Nome><Sintomi><Sintomo>DifficoltaRespiratoria1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FCMaggiore140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente2</Nome><Sintomi><Sintomo>DoloreToracico1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FC121-140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente3</Nome><Sintomi><Sintomo>DoloreToracico1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FCMaggiore140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente4</Nome><Sintomi><Sintomo>DifficoltaRespiratoria1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FCminore40</Frequenza></Paziente>
+    <Paziente><Nome>Paziente5</Nome><Sintomi><Sintomo>DifficoltaRespiratoria1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FC40-49</Frequenza></Paziente>
+    <Paziente><Nome>Paziente6</Nome><Sintomi><Sintomo>DoloreToracico1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+    <Paziente><Nome>Paziente7</Nome><Sintomi><Sintomo>DifficoltaRespiratoria1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FCMaggiore140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente8</Nome><Sintomi><Sintomo>DoloreToracico1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FCminore40</Frequenza></Paziente>
+    <Paziente><Nome>Paziente9</Nome><Sintomi><Sintomo>DifficoltaRespiratoria1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente10</Nome><Sintomi><Sintomo>DoloreToracico1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FCMaggiore140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente11</Nome><Sintomi><Sintomo>DifficoltaRespiratoria1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FC121-140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente12</Nome><Sintomi><Sintomo>DoloreToracico1</Sintomo></Sintomi><Saturazione>Saturazione1</Saturazione><Frequenza>FCminore40</Frequenza></Paziente>
+
+
+    <!-- ===================== -->
+    <!--       GIALLI (12)     -->
+    <!-- ===================== -->
+
+    <Paziente><Nome>Paziente13</Nome><Sintomi><Sintomo>Trauma1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente14</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente15</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC121-140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente16</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC40-49</Frequenza></Paziente>
+    <Paziente><Nome>Paziente17</Nome><Sintomi><Sintomo>Trauma1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC121-140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente18</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente19</Nome><Sintomi><Sintomo>Trauma1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente20</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC121-140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente21</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC40-49</Frequenza></Paziente>
+    <Paziente><Nome>Paziente22</Nome><Sintomi><Sintomo>Trauma1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC40-49</Frequenza></Paziente>
+    <Paziente><Nome>Paziente23</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC121-140</Frequenza></Paziente>
+    <Paziente><Nome>Paziente24</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione2</Saturazione><Frequenza>FC40-49</Frequenza></Paziente>
+
+
+    <!-- ===================== -->
+    <!--       VERDI (13)      -->
+    <!-- ===================== -->
+
+    <Paziente><Nome>Paziente25</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente26</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente27</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+    <Paziente><Nome>Paziente28</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+    <Paziente><Nome>Paziente29</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente30</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente31</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+    <Paziente><Nome>Paziente32</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente33</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+    <Paziente><Nome>Paziente34</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente35</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+    <Paziente><Nome>Paziente36</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC101-120</Frequenza></Paziente>
+    <Paziente><Nome>Paziente37</Nome><Sintomi><Sintomo>Febbre1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC50-59</Frequenza></Paziente>
+
+
+    <!-- ===================== -->
+    <!--      BIANCHI (13)     -->
+    <!-- ===================== -->
+
+    <Paziente><Nome>Paziente38</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente39</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente40</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente41</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente42</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente43</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente44</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente45</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente46</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente47</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente48</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente49</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+    <Paziente><Nome>Paziente50</Nome><Sintomi><Sintomo>Raffreddore1</Sintomo></Sintomi><Saturazione>Saturazione3</Saturazione><Frequenza>FC60-100</Frequenza></Paziente>
+
+</Pazienti>
