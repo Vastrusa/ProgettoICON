@@ -1,0 +1,34 @@
+# --- Ambienti virtuali ---
+venv/
+env/
+bayes_env/
+.venv/
+
+# --- Cache Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- File temporanei / di sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Log ---
+*.log
+
+# --- File di configurazione locali ---
+*.swp
+*.swo
+
+# --- Cartelle IDE ---
+.vscode/
+.idea/
+
+# --- Modelli ML (se vuoi escluderli) ---
+# *.pkl
+# *.joblib
+
+# --- Backup ---
+*.bak
+*.tmp
