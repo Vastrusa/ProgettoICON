@@ -13,7 +13,7 @@ Il progetto implementa un sistema intelligente di triage per il Pronto Soccorso,
 🔍 Knowledge Base in Prolog
 🤖 Modelli di Machine Learning (Logistic Regression, Random Forest, Naive Bayes)
 🎲 Rete Bayesiana discreta con 7 variabili e 672 combinazioni
-🗺️ Algoritmo A\* per la gestione della coda
+🗺️ Algoritmo A\* per la simulazione dell’evoluzione clinica e la validazione del triage.
 🖥️ Backend Flask per la gestione operativa
 📊 Dashboard interattiva con grafici
 📥 Importazione pazienti da file XML
@@ -32,8 +32,8 @@ Inferenza del codice triage
 Integrazione con Python via pyswip
 
 🔹 Machine Learning
-Generazione dataset sintetico
-Bilanciamento classi
+Generazione dataset realistico
+Gestione dello sbilanciamento tramite class_weight="balanced"
 Addestramento modelli:
 Logistic Regression
 Random Forest
@@ -50,9 +50,9 @@ Inferenza manuale tramite indice lineare
 Output coerente con le 4 classi di triage
 
 🔹 Algoritmo A\*
-Gestione intelligente della coda
-Considera priorità, tempo di arrivo e gravità
-Restituisce il prossimo paziente da chiamare
+Simulazione dell’evoluzione clinica
+Calcolo del percorso clinico a costo minimo
+Validazione del codice di triage assegnato dagli altri moduli
 
 🔹 Backend Flask
 Inserimento pazienti
@@ -60,6 +60,7 @@ Calcolo triage tramite tutti i modelli
 Gestione coda
 Import XML
 Persistenza tramite JSON
+Il backend integra i risultati dei modelli tramite una logica di fusione e registra eventuali conflitti in conflitti.log.
 
 🔹 Dashboard Web
 Tabella pazienti in tempo reale
@@ -80,6 +81,7 @@ ProntoSoccorsoIntelligente/
 │   ├── pazienti_test.xml
 │   ├── conflitti.log
 │   ├── bayes/
+│   │   ├──__init__.py
 │   │   ├── train_bayes.py
 │   │   ├── export_cpd.py
 │   │   ├── bayes_inference.py
@@ -88,13 +90,20 @@ ProntoSoccorsoIntelligente/
 │   ├── ml_pipeline/
 │   │   ├── genera_dataset_sporco.py
 │   │   ├── genera_modelli.py
-│   │   ├── clean_dataset.py
+│   │   └──clean_dataset.py
 │   ├── data/
 │   │   ├── dataset_pulito.csv
-│   ├── ├── dataset_sporco.csv
+│   │   ├── dataset_sporco.csv
 │   │   └── genera_dataset_bayes.py
 │   ├── templates/
 │   │   └── dashboard.html
+│   ├── models/
+│   │   ├──bayes_cpd.json  
+│   │   ├──bayes_model.pkl 
+│   │   ├──modello_logistico_triage.pkl
+│   │   ├──modello_random_forest_triage.pkl
+│   │   ├──naive_encoder.joblib
+│   │   └──naive_model.joblib
 ├── requirements.txt
 └── README.md
 🚀 Come eseguire il progetto
@@ -115,9 +124,10 @@ http://127.0.0.1:5000
 🧪 Machine Learning
 Rigenerare il modello ML
 Codice
-cd Backend/ml
-python genera_dataset.py
-python train_model.py
+cd Backend/ml_pipeline
+python genera_dataset_sporco.py
+python clean_dataset.py
+python genera_modelli.py
 
 Rigenerare la rete Bayesiana
   cd Backend
